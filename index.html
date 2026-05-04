@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTCAFE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Elegant Minimalist Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Welcome Presentation (Preloader) -->
+    <div class="welcome-screen">
+        <h1 class="welcome-text retro-huge">SMARTCAFE</h1>
+        <p class="welcome-sub">SISTEMA DE GESTIÓN</p>
+    </div>
+
+    <div class="main-content">
+        <!-- Interactive Background -->
+        <canvas id="coffee-canvas" class="coffee-canvas"></canvas>
+
+        <header class="hero">
+            <nav class="navbar">
+                <div class="logo">SMART<span>CAFE</span></div>
+                <div class="nav-links">
+                    <a href="#video" class="nav-link">Video</a>
+                    <a href="#pasos" class="nav-link">Módulos</a>
+                </div>
+            </nav>
+            
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <h1 class="hero-title retro-title" id="interactive-title">CAFETERÍA NFC</h1>
+                    <p class="hero-subtitle">Gestión, inventario y punto de venta centralizado. Listo para operar.</p>
+                    <div class="hero-buttons">
+                        <a href="https://drive.google.com/file/d/1alo-tAFsBrFqn5t_aPmJd3GwLmfR9_FK/view?usp=drive_link" target="_blank" class="btn-primary">Descargar Aplicación</a>
+                        <a href="#video" class="btn-secondary">Ver Presentación</a>
+                    </div>
+                </div>
+                <div class="hero-coffee-cup">
+                    <div class="cup" id="interactive-cup">
+                        <div class="steam-container">
+                            <span class="steam s1"></span>
+                            <span class="steam s2"></span>
+                            <span class="steam s3"></span>
+                        </div>
+                        <div class="cup-body">
+                            <div class="coffee-fill"></div>
+                        </div>
+                        <div class="cup-handle"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="resumen" class="section summary-section">
+            <div class="container column-center">
+                <h2 class="section-title retro-title-sm">¿QUÉ ES <span>SMARTCAFE</span>?</h2>
+                <div class="glass-card summary-card gsap-card retro-card">
+                    <p class="summary-text"><strong>Smart Cafe</strong> es una app tipo punto de venta (POS) diseñada para gestionar ventas, productos e inventario de forma rápida y sencilla.</p>
+                    <p class="summary-text">Permite registrar ventas en tiempo real, controlar stock, leer productos mediante <strong>NFC</strong> y sincronizar toda la información con la nube.</p>
+                    <p class="summary-text">Funciona también <strong>sin internet</strong> gracias a su almacenamiento local, sincronizando los datos automáticamente cuando vuelve la conexión.</p>
+                    <p class="summary-text">Ideal para cafeterías y pequeños negocios que buscan un sistema moderno, rápido y fácil de usar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section video-section">
+            <div class="container column-center">
+                <h2 class="section-title retro-title-sm">SISTEMA EN <span>ACCIÓN</span></h2>
+                <div class="glass-card video-wrapper" id="video-container">
+                    <div class="video-facade" id="video-facade">
+                        <div class="play-btn">
+                            <div class="play-triangle"></div>
+                        </div>
+                        <p class="retro-p">REPRODUCIR VIDEO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pasos" class="section steps-section">
+            <div class="container">
+                <h2 class="section-title center retro-title-sm">MÓDULOS DEL <span>SISTEMA</span></h2>
+                <p class="subtitle center">Flujo de operación.</p>
+                
+                <div class="timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-item gsap-card">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content retro-card">
+                            <h3 class="retro-h3">1. Instalación</h3>
+                            <p>Instala la aplicación en tus dispositivos para comenzar a operar.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="timeline-item gsap-card">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content retro-card">
+                            <h3 class="retro-h3">2. Gestión de Menú</h3>
+                            <p>Administra tu catálogo, inventario y precios en tiempo real.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="timeline-item gsap-card">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-card timeline-content retro-card">
+                            <h3 class="retro-h3">3. Punto de Venta</h3>
+                            <p>Procesa pagos y atiende pedidos de forma rápida y segura.</p>
+                            <div class="nfc-animation-cozy">
+                                <div class="device phone"></div>
+                                <div class="waves"><span></span><span></span></div>
+                                <div class="device pos"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container column-center glass-card cta-card gsap-card retro-card">
+                <h2 class="retro-title-sm">¿LISTO PARA OPERAR?</h2>
+                <p>Descarga el sistema e inicia tus operaciones.</p>
+                <a href="https://drive.google.com/file/d/1alo-tAFsBrFqn5t_aPmJd3GwLmfR9_FK/view?usp=drive_link" target="_blank" class="btn-primary">Descargar SMARTCAFE</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container center">
+                <div class="logo">SMART<span>CAFE</span></div>
+                <p>&copy; 2026. Sistema de gestión.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
