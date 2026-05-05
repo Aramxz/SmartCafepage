@@ -595,11 +595,40 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .retro-title { font-size: 3.5rem; }
-    .retro-huge { font-size: 3.5rem; }
+    .section {
+        padding: 60px 5%;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 5%;
+    }
+    .logo {
+        font-size: 2.2rem;
+    }
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .nav-links a {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .retro-title { font-size: 2.8rem; }
+    .retro-title-sm { font-size: 2.2rem; }
+    .retro-huge { font-size: 3rem; }
+    
+    .glass-card {
+        padding: 1.5rem;
+    }
+    .summary-text {
+        font-size: 1.1rem;
+    }
+    
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
     }
     .hero-text-container {
         text-align: center;
@@ -609,21 +638,88 @@ footer p {
         border-top: 4px solid var(--accent);
         padding-left: 0;
         padding-top: 15px;
-        margin: 0 auto 2.5rem auto;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
     }
     .hero-buttons {
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1.5rem;
     }
     .hero-coffee-cup {
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
+    .cup {
+        transform: scale(0.9);
+    }
+    .cup:hover {
+        transform: scale(1) rotate(8deg);
+    }
+    
     .timeline {
-        padding-left: 40px;
+        padding-left: 30px;
     }
     .timeline-dot {
-        left: -42px;
+        left: -32px;
+        width: 24px;
+        height: 24px;
+        top: 35px;
     }
     .timeline::before {
-        left: 5px;
+        left: -16px;
+    }
+    .retro-h3 {
+        font-size: 1.5rem;
+    }
+    
+    .nfc-animation-cozy {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    
+    .cta-card {
+        padding: 3rem 1.5rem;
+    }
+    .cta-card p {
+        font-size: 1.2rem;
+    }
+    
+    .play-btn {
+        width: 70px;
+        height: 70px;
+    }
+    .play-triangle {
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 25px solid var(--bg-color);
+        margin-left: 8px;
+    }
+    .retro-p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .retro-title { font-size: 2.2rem; }
+    .retro-title-sm { font-size: 1.8rem; }
+    .retro-huge { font-size: 2.2rem; }
+    .logo { font-size: 1.8rem; }
+    .nav-links {
+        gap: 1rem;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .timeline-item {
+        margin-bottom: 3rem;
     }
 }
